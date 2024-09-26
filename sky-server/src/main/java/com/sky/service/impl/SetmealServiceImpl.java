@@ -100,11 +100,9 @@ public class SetmealServiceImpl implements SetmealService {
     @Override
     public void startOrStop(Integer status, Long id) {
         if (status == StatusConstant.ENABLE) {
-            System.out.println("ewrtghfyjgkhl");
             List<Dish> dishs = dishMapper.getBySetmealId(id);
             dishs.forEach(dish -> {
-                System.out.println("retyu");
-                if (dish.getStatus() == StatusConstant.ENABLE) {
+                if (dish.getStatus() == StatusConstant.DISABLE) {
                     throw new DeletionNotAllowedException(MessageConstant.SETMEAL_ENABLE_FAILED);
                 }
             });
