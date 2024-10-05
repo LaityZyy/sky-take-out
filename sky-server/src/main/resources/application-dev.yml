@@ -11,3 +11,8 @@ sky:
     access-key-id: LTAI5tD56coFfEESQd4Dh82f
     access-key-secret: FoJOyKiyN2erlPPeooZVORV9CDeHzW
     bucket-name: zhaoyang-take-out
+  redis:
+    host: localhost
+    port: 6379
+    password: Zyy200501
+    database: 10
