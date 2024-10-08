@@ -9,7 +9,7 @@ import java.util.List;
 
 @Mapper
 public interface SetmealDishMapper {
-    List<Long> getSetmealIdsByDishId(List<Long> dishIds);
+    List<Long> getSetmealIdsByDishIds(List<Long> dishIds);
 
     void insertBatch(List<SetmealDish> setmealDishes);
 
